@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flint/static/css/main.85653844.css",
+    "main.js": "/flint/static/js/main.7fc1d30a.js",
+    "static/js/787.0dc49920.chunk.js": "/flint/static/js/787.0dc49920.chunk.js",
+    "index.html": "/flint/index.html",
+    "main.85653844.css.map": "/flint/static/css/main.85653844.css.map",
+    "main.7fc1d30a.js.map": "/flint/static/js/main.7fc1d30a.js.map",
+    "787.0dc49920.chunk.js.map": "/flint/static/js/787.0dc49920.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85653844.css",
+    "static/js/main.7fc1d30a.js"
+  ]
+}
