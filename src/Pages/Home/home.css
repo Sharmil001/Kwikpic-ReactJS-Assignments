@@ -1,0 +1,288 @@
+/* home container */
+.home-container {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.home {
+  position: absolute;
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.home .first {
+  position: absolute;
+  width: 176px;
+  height: calc(175px);
+  top: 13%;
+  left: 4.4691%;
+  animation: 5s ease-in-out 0s infinite normal none running float;
+  transition: top 200ms ease 0s;
+}
+.home .second {
+  width: 176px;
+  height: 176px;
+  top: 13%;
+  right: 15%;
+  position: absolute;
+  right: 4.4799%;
+  animation: 5s ease-in-out 0s infinite normal none running float;
+  transition: top 200ms ease 0s;
+}
+.home .third {
+  width: 220px;
+  height: calc(240.422px);
+  bottom: 10%;
+  position: absolute;
+  left: -2.9855%;
+  animation: 5s ease-in-out 0s infinite normal none running float;
+  transition: top 200ms ease 0s;
+}
+.home .fourth {
+  width: 176px;
+  height: calc(175px);
+  bottom: 12%;
+  position: absolute;
+  right: -3.5971%;
+  animation: 5s ease-in-out 0s infinite normal none running float;
+  transition: top 200ms ease 0s;
+}
+
+/* info */
+.information.column {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.information.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information {
+  min-height: 100vh;
+  padding: 100px 10%;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+.home-container .main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.home-container .main .title {
+  margin-bottom: 30px;
+  font-size: 66px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0px;
+  letter-spacing: -2px;
+  line-height: 1.25;
+}
+.home-container .main .sub-title {
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* invest info */
+.invest-now {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(88, 88, 88);
+  padding: 28px 60px;
+  box-sizing: border-box;
+  box-shadow: rgb(35 35 35 / 25%) 0px 6.94028px 43.3768px;
+  border-radius: 14px;
+}
+.invest-now-txt {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* second page */
+.sticky-main {
+  padding: 0px 100px;
+  align-items: unset;
+}
+.sticky-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: unset;
+}
+.sticky-img-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.sticky-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  position: sticky;
+  top: 50px;
+  min-height: 600px;
+  height: 100vh;
+}
+.sticky-span {
+  display: block;
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding: 100% 0px 0px;
+}
+.sticky-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+/* card changes */
+.cards {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0px;
+}
+.cards .shades {
+  width: 962px;
+  height: 942px;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+}
+.cards .scrollerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%;
+}
+.cards .card-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: block;
+  object-fit: cover;
+  width: 0;
+  height: 0;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+.card .card-outter {
+  position: relative;
+  display: inline-block;
+}
+.card .card-img {
+  display: block;
+  max-width: 100%;
+  height: inherit;
+  background-color: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* shades */
+
+.home-container .shades {
+  width: 962px;
+  height: 942px;
+}
+.shades-right {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+}
+.shades-left {
+  position: absolute;
+  right: 25%;
+  top: 10%;
+}
+.shader-outer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  background: none;
+  opacity: 1;
+  padding-top: 98%;
+}
+
+.shades .shades-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: auto;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* home page images */
+.img-conatiner {
+  display: block;
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  background: none;
+  opacity: 1;
+  position: absolute;
+}
+
+.float-img {
+  position: absolute;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}

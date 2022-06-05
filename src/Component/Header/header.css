@@ -1,0 +1,135 @@
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgb(52, 52, 52);
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+  padding: 20px 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO CSS */
+.navbar .logo {
+  position: relative;
+  height: 36px;
+  width: 30px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo .logo-container {
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  position: absolute;
+  inset: 0px;
+}
+
+.logo .logo-img {
+  position: absolute;
+  inset: 0px;
+  padding: 0px;
+  display: block;
+  border: none;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* NAVIGATION LINKS */
+.nav-link {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+  margin-left: 45px;
+  text-decoration: none !important;
+}
+.nav-link.active {
+  opacity: 1;
+  backdrop-filter: blur(0px);
+}
+
+/* DOWNLOAD BUTTON */
+.download-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 7.31px 8px 8.71px 26.81px;
+  background: rgb(26, 26, 26);
+  box-shadow: rgb(35 35 35 / 25%) 0px 4.87417px 30.4636px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.download-container .download-text {
+  text-align: center;
+  padding-right: 17px;
+}
+
+.download-btn {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  border: 4.87px solid rgb(0, 0, 0);
+}
+
+.download-btn-img {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.download-btn-icon {
+  position: absolute;
+  object-fit: cover;
+  inset: 0px;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}

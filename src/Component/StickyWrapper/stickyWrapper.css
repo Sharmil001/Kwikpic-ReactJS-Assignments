@@ -1,0 +1,47 @@
+.container {
+  align-items: flex-start;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.container .item-container {
+  min-height: 100vh;
+}
+
+.container .item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  padding: 30px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.details .heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.25;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.details .description {
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  opacity: 0.7;
+}

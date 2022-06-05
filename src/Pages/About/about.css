@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  margin: 180px 0px;
+  padding-top: 0px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-right: 50px;
+  padding: 20px 20px 40px;
+  padding-left: 140px;
+}
+
+.about-header {
+  text-align: left;
+  font-size: 70px;
+  line-height: 75px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.about-info .description {
+  font-size: 20px;
+  padding-top: 40px;
+  line-height: 36px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.about-imges {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+.about-imges .lottie-player {
+  width: 68%;
+  margin: 0px 0px 0px auto !important;
+  background: transparent;
+  margin: 0px auto;
+  outline: none;
+  overflow: hidden;
+}
