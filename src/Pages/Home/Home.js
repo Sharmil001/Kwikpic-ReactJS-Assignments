@@ -12,6 +12,7 @@ const Home = () => {
           <div className="first">
             <span className="img-conatiner">
               <img
+               alt="home img"
                 className="float-img"
                 src={
                   "https://www.flint.money/_next/image?url=%2Fhero-assets%2Ftether.png&w=3840&q=75"
@@ -22,6 +23,7 @@ const Home = () => {
           <div className="second">
             <span className="img-conatiner">
               <img
+                alt="home img"
                 className="float-img"
                 src={
                   "https://www.flint.money/_next/image?url=%2Fhero-assets%2Fusdc.png&w=3840&q=75"
@@ -32,6 +34,7 @@ const Home = () => {
           <div className="third">
             <span className="img-conatiner">
               <img
+                alt="home img"
                 className="float-img"
                 src={
                   "https://www.flint.money/_next/image?url=%2Fhero-assets%2Feth.png&w=3840&q=75"
@@ -42,6 +45,7 @@ const Home = () => {
           <div className="fourth">
             <span className="img-conatiner">
               <img
+                alt="home img"
                 className="float-img"
                 src={
                   "https://www.flint.money/_next/image?url=%2Fhero-assets%2Fprotect.png&w=3840&q=75"
@@ -66,6 +70,7 @@ const Home = () => {
         <div className="shades shades-left">
           <span className="shades-outer">
             <img
+             alt="home img"
               src={
                 "https://www.flint.money/_next/image?url=%2Fhero-assets%2Fbs.png&w=2048&q=75"
               }
@@ -124,6 +129,7 @@ const Home = () => {
       <div className="cards">
         <div className="shades">
           <img
+            alt="sticky img"
             className="card-img"
             src={
               "https://www.flint.money/_next/image?url=%2Fhero-assets%2Fbs.png&w=2048&q=75"

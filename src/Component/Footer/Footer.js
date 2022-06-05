@@ -11,6 +11,7 @@ const Footer = () => {
         <span className="shader-outer">
           <span className="shader-inner" />
           <img
+            alt="shader img"
             src={
               "https://www.flint.money/_next/image?url=%2Fhero-assets%2Fps.png&w=2048&q=75"
             }
@@ -22,6 +23,7 @@ const Footer = () => {
         <span className="shader-outer">
           <span className="shader-inner" />
           <img
+            alt="shader img"
             src={
               "https://www.flint.money/_next/image?url=%2Fhero-assets%2Fbs.png&w=2048&q=75"
             }
@@ -38,13 +40,13 @@ const Footer = () => {
               <div className="rating">{ele.rating}</div>
               <div className="stars">
                 <span className="stars-outer">
-                  <img className="star-img" src={ele.image} />
+                  <img alt="star img" className="star-img" src={ele.image} />
                 </span>
               </div>
               <div className="store">
                 <div className="logo">
                   <span className="store-outter">
-                    <img src={ele.store} className="store-img" />
+                    <img alt="store img" src={ele.store} className="store-img" />
                   </span>
                 </div>
                 <div>{ele.storeName}</div>
