@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import Card from "../../Component/Card/Card";
 import StickyWrapper from "../../Component/StickyWrapper/StickyWrapper";
 import { cardData } from "../../mockup-data/data";
 import "./home.css";
 
 const Home = () => {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollY(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
+      
       <div className="home-container">
         <div className="home">
-          <div className="first">
+          <div className="first" style={{left: scrollY !== 0 ? (((-scrollY/4) + 40)) : null}}>
             <span className="img-conatiner">
               <img
                alt="home img"
@@ -20,7 +36,7 @@ const Home = () => {
               />
             </span>
           </div>
-          <div className="second">
+          <div className="second" style={{right: scrollY !== 0 ? (((-scrollY/4) + 30)) : null}}>
             <span className="img-conatiner">
               <img
                 alt="home img"
@@ -31,7 +47,7 @@ const Home = () => {
               />
             </span>
           </div>
-          <div className="third">
+          <div className="third" style={{left: scrollY !== 0 ? (((-scrollY/10) - 65)) : null}}>
             <span className="img-conatiner">
               <img
                 alt="home img"
@@ -42,7 +58,7 @@ const Home = () => {
               />
             </span>
           </div>
-          <div className="fourth">
+          <div className="fourth" style={{right: scrollY !== 0 ? (((-scrollY/10) - 50)) : null}}>
             <span className="img-conatiner">
               <img
                 alt="home img"
@@ -94,7 +110,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/* sticky image  */}
       <div className="sticky-main">
         <div className="sticky-container">

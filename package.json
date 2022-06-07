@@ -1,7 +1,6 @@
 {
   "name": "flint",
   "version": "0.1.0",
-  "author": "SharmilAdroja",
   "private": true,
   "homepage": "https://sharmil001.github.io/flint",
   "dependencies": {
@@ -40,5 +39,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }

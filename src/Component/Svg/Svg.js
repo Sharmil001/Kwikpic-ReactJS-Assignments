@@ -1,6 +1,21 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 const Svg = () => {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollY(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +26,7 @@ const Svg = () => {
       style={{
         width: "100%",
         height: "100%",
-        transform: "translate3d(0px, 0px, 0px)",
+        transform: `translate3d(${scrollY}, ${scrollY}, ${scrollY})`,
         contentVisibility: "visible",
       }}
     >
